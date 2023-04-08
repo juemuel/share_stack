@@ -1,4 +1,4 @@
-# techstack_memo
+# stack_share
 
 - 个人站：
 - vitePress：[文档](https://process1024.github.io/vitepress/guide/theme-sidebar)
