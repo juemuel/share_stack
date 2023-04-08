@@ -1,5 +1,7 @@
 # techstack_memo
 
+- 个人站：
+- vitePress：[文档](https://process1024.github.io/vitepress/guide/theme-sidebar)
 
 ## 周刊
 
