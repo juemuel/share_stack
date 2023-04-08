@@ -14,7 +14,7 @@ hero:
       link: /01.Weekly/Start
     - theme: brand
       text: 了解配置
-      link: /
+      link: /09.Configure/Start
     - theme: alt
       text: 在 github 上查看
       link: https://github.com/juemuel/techstack_memo
