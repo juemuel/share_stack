@@ -15,7 +15,9 @@ jobs:
         uses: actions/checkout@v3
         # 2. 构建生成静态文件（这一步可以根据需求细化、比如指定版本的node、pnpm等工具）
       - name: Build
-        uses: npm install && npm run docs:build
+        uses: actions/setup-node@v3 && npm run docs:dev
+        with:
+          node-version: 16        
       # 3. 部署到 GitHub Pages
       - name: Deploy							
         uses: JamesIves/github-pages-deploy-action@releases/v3
