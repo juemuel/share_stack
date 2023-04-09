@@ -1,0 +1,27 @@
+name: pages-build-site
+# push到main时触发
+on: 
+  push:
+    branches: 
+      - main
+jobs:
+  deploy:
+    # 最新版 Ubuntu
+    runs-on: ubuntu-latest  	
+    # name表示名称，uses表示使用的插件（见插件市场），with表示传给插件的参数
+    steps:
+      # 1. 拉取代码
+      - name: Checkout 							
+        uses: actions/checkout@v3
+        # 2. 构建生成静态文件（这一步可以根据需求细化、比如指定版本的node、pnpm等工具）
+      - name: Build
+        uses: npm install && npm run docs:build
+      # 3. 部署到 GitHub Pages
+      - name: Deploy							
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          # 项目secrets下的token 、项目名、部署的分支、项目源分支中 移动的目录
+          ACCESS_TOKEN: ${{ secrets.FORACTION }}
+          REPOSITORY_NAME: juemuel/share_stack
+          BRANCH: gh-pages
+          FOLDER: docs/.vuepress/dist
