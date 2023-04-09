@@ -13,7 +13,8 @@ jobs:
       # 1. 拉取代码
       - name: Checkout 							
         uses: actions/checkout@v3
-        # 2. 构建所需文件（使用pnpm） 
+      
+      # 2. 构建所需文件（使用pnpm） 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         id: pnpm-install
@@ -36,6 +37,7 @@ jobs:
         run: pnpm install
       - name: Build docs
         run: pnpm -F docs build
+        
       # 3. 部署到 GitHub Pages
       - name: Deploy							
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -44,4 +46,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.FORACTION }}
           REPOSITORY_NAME: juemuel/share_stack
           BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
+          FOLDER: docs/.vitepress/dist
+
