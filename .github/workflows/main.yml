@@ -38,7 +38,7 @@ jobs:
       - name: Build docs
         run: pnpm -F docs build
         
-      # 3. 部署到 GitHub Pages，
+      # 3. 把当前分支下的某个目录内容 部署到 GitHub Pages，
       # 方案1:JamesIves：https://github.com/marketplace/actions/deploy-to-github-pages
       - name: Deploy							
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -46,5 +46,5 @@ jobs:
           # 项目secrets下的token 、部署的分支、移动的目录
           ACCESS_TOKEN: ${{ secrets.FORACTION }}
           BRANCH: gh-pages
-          FOLDER: ./docs/.vitepress/dist
+          FOLDER: docs/.vitepress/dist
 
