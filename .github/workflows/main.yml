@@ -42,9 +42,8 @@ jobs:
       - name: Deploy							
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          # 项目secrets下的token 、项目名、部署的分支、项目源分支中 移动的目录
+          # 项目secrets下的token 、部署的分支、移动的目录
           ACCESS_TOKEN: ${{ secrets.FORACTION }}
-          REPOSITORY_NAME: juemuel/share_stack
           BRANCH: gh-pages
           FOLDER: docs/.vitepress/dist
 
