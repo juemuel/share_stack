@@ -1,0 +1,12 @@
+:root{
+	/* 标题颜色：默认是绿色 | 设置红色 */
+    /* --vp-home-hero-name-color: red; */
+  
+    /* 标题颜色：设置渐变色 */
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: linear-gradient( 43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    /* 图标背景：加渐变色 */
+    --vp-home-hero-image-background-image: linear-gradient( 135deg, #FFF6B7 10%, #F6416C 100%);
+    --vp-home-hero-image-filter: blur(100px);
+}

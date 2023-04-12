@@ -1,4 +1,5 @@
-import { getSideBar } from 'vitepress-plugin-autobar'
+// import { getSideBar } from 'vitepress-plugin-autobar'
+import sidebar from './sidebar'
 
 export default {
 	title: 'juemuelの分享站', // 网站标题
@@ -29,6 +30,7 @@ export default {
 			// 	link: '#'
 			// }
 		],
+		plugins: ['@vitepress/last-updated'],
 		lastUpdatedText: '最近更新时间', // 外部lastUpdated开启
 		siteTitle: 'Juemuelの分享站',
 		nav: [ //右侧导航，link跳转地址，active《atch保持高亮
@@ -66,7 +68,7 @@ export default {
 			   */
 		],
 		// 侧边导航
-		sidebar: getSideBar("./docs"),// 使用了vitepress-plugin-autobar
+		sidebar: sidebar,
 		// [{ // 默认一'/':路径
 		// 		text: '项目简介', // 栏目块的title
 		// 		items: [{
