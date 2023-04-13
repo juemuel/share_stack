@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build docs
-        run: pnpm run docs:dev
+        run: rm -r docs/.vitepress/dist && pnpm run docs:dev
         
       # 3. 把当前分支下的某个目录内容 部署到 GitHub Pages，
       # 方案1:JamesIves：https://github.com/marketplace/actions/deploy-to-github-pages
