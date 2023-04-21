@@ -47,4 +47,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.FORACTION }}
           BRANCH: gh-pages
           FOLDER: docs/.vitepress/dist
+          BUILD_SCRIPT: npm install && npm run build
 
