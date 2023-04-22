@@ -17,16 +17,17 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        id: pnpm-install
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@646cdf48217256a3d0b80361c5a50727664284f2
         with:
-          version: 7
-          run_install: false
+          version: 6.10.0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+          cache: 'pnpm'
+      - run: pnpm install
    		
-      # 2. 构建所需文件（使用pnpm） 
-      - name: Install dependencies
-        run: pnpm install
+      # 2. 构建所需文件
       - name: Build docs
         run: pnpm -F run docs:dev
         
