@@ -25,7 +25,8 @@ jobs:
         with:
           node-version: '14'
           cache: 'pnpm'
-      - run: pnpm install
+      - name: Install PNPM
+        run: pnpm install
    		
       # 2. 构建所需文件
       - name: Build docs
