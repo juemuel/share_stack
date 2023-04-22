@@ -1,9 +1,11 @@
 // import { getSideBar } from 'vitepress-plugin-autobar'
-import sidebar from './sidebar'
+// import sidebar from './sidebar'
+import { defineConfig } from 'vitepress'
+
 
 export default {
 	title: 'juemuelの分享站', // 网站标题
-	description: '基于vitePress，搭建的一个技术周刊网站', //网站描述在html的meta中显示
+	description: '基于vitePress，搭建的一个技术月刊网站', //网站描述在html的meta中显示
 	base: '/share_stack/', // 默认/，可以使用二忌地址/base/
 	head: [
 		['meta', { name: 'keywords', content: '月刊、前端、技术' }],
@@ -33,7 +35,7 @@ export default {
 				activeMatch: '/index'
 			},
 			{
-				text: '灵动周刊',
+				text: '灵动月刊',
 				link: '/01.Monthly/index',
 			},
 			{
@@ -50,7 +52,7 @@ export default {
 				  { text: 'ElementUI', link: '/04.Component/ElementUI' },
 				  { text: 'AntD', link: '/04.Component/AntUI' },
 				  { text: 'JueMUI', link: '/04.Component/JueMUI' },
-				  { text: 'VitepressUI', link: '/04.Component/VitePressUI' },
+				  { text: 'Vitepress中引入组件', link: '/04.Component/VitePressUI' },
 				]
 			},  
 		],
@@ -128,7 +130,7 @@ export default {
 					collapsed: true, // 开启默认折叠
 				},
 				{
-					text: 'VitePressUI',
+					text: 'VitePress引入组件',
 					items: [
 						// { text: 'JueMUI', link: '/04.Component/JueMUI' },
 					],
