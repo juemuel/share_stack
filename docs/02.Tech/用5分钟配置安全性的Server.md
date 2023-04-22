@@ -1,6 +1,7 @@
-
 翻译了一篇文章：找机会做个校对贴上来
+
 原文：https://jamesonricks.com/re-post-my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers/
+
 再刊 我在服务器上的前5分钟；或，Linux服务的基本安全性
 
 关于这次再刊
