@@ -1,6 +1,6 @@
 # Bug：用Vercel解决Github-readme-Stats的访问超限
 
-- 条件：配置Git profile，
+- 前提：配置Git profile->使用Github-readme-Stats->遇到Token限流
 
 ## 起因
 
