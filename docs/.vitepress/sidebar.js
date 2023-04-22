@@ -13,11 +13,21 @@ sidebar.reduce(function(previousValue,currentValue){
 	  case "Interview":
 		currentValue.text = "前端面试";
 		break;
+	  case "Component":
+		currentValue.text = "组件库";
+		break;
+		case "About":
+		currentValue.text = "关于我";
+		break;
+	  case "Configure":
+		currentValue.text = "Configure";
+		break;
 	} 
-	currentValue.collapsible=true;
-	currentValue.collapsed=true;
+	// currentValue.collapsible=true;
+	// currentValue.collapsed=true;
 	currentValue.items.reverse();
 },0)
+
 console.log(sidebar);
 
 export default sidebar;
