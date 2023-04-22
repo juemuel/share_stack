@@ -3,10 +3,11 @@
 - 个人站：[jumuel分享站](https://juemuel.github.io/share_stack/)
 - vitePress：[文档](https://process1024.github.io/vitepress/guide/theme-sidebar)
 
-## 模块
-### 灵动周刊
-### 技术分享
-### 前端面试
+## 维护模块
+- 灵动周刊
+- 前端面试
+- 技术分享
+- 组件库
 
 ## 更新日志
 - 2024.0412 优化首页渐变效果、模块化封装侧边栏插件（折叠、逆序）
