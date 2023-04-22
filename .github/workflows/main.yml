@@ -14,13 +14,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm i pnpm -g
 			
       # 2. 构建所需文件（使用pnpm） 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
       - name: Build docs
-        run: pnpm run docs:dev
+        run: npm run vitepress serve docs
         
       # 3. 把当前分支下的某个目录内容 部署到 GitHub Pages，
       # 方案1:JamesIves：https://github.com/marketplace/actions/deploy-to-github-pages
