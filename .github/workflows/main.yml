@@ -9,14 +9,40 @@ jobs:
     runs-on: ubuntu-latest  	
     # name表示名称，uses表示使用的插件（见插件市场），with表示传给插件的参数
     steps:
-      - name: Configure
+      - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+      
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+					
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 			
       # 2. 构建所需文件（使用pnpm） 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       - name: Build docs
-        run: npm run vitepress serve docs
+        run: pnpm -F run docs:dev
         
       # 3. 把当前分支下的某个目录内容 部署到 GitHub Pages，
       # 方案1:JamesIves：https://github.com/marketplace/actions/deploy-to-github-pages
@@ -26,7 +52,6 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.FORACTION }}
           BRANCH: gh-pages
           FOLDER: docs/.vitepress/dist
-					
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
       #   with:
