@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as t,N as o}from"./chunks/framework.efe78331.js";const p=JSON.parse('{"title":"月刊Demo","description":"","frontmatter":{},"headers":[],"relativePath":"01.Monthly/月刊Demo.md","lastUpdated":null}'),r={name:"01.Monthly/月刊Demo.md"},n=o("",4),s=[n];function l(_,d,i,c,h,m){return e(),t("div",null,s)}const f=a(r,[["render",l]]);export{p as __pageData,f as default};
