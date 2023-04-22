@@ -11,9 +11,6 @@ jobs:
     steps:
       - name: Configure
         uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
 			
       # 2. 构建所需文件（使用pnpm） 
       - name: Install dependencies
