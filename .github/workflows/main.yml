@@ -6,42 +6,33 @@ on:
       - main
 jobs:
   deploy:
-    # 最新版 Ubuntu
     runs-on: ubuntu-latest  	
     # name表示名称，uses表示使用的插件（见插件市场），with表示传给插件的参数
     steps:
-      # 1. 拉取代码
       - name: Configure
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm i pnpm -g
-      - run: pnpm install --frozen-lockfile
 			
-      - name: Build
-        run: pnpm run docs:dev
-				
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
-
-				
-      
       # 2. 构建所需文件（使用pnpm） 
       - name: Install dependencies
         run: pnpm install
       - name: Build docs
-        run: rm -r docs/.vitepress/dist/ && pnpm run docs:dev
+        run: pnpm run docs:dev
         
       # 3. 把当前分支下的某个目录内容 部署到 GitHub Pages，
       # 方案1:JamesIves：https://github.com/marketplace/actions/deploy-to-github-pages
       - name: Deploy							
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          # 项目secrets下的token 、部署的分支、移动的目录
           ACCESS_TOKEN: ${{ secrets.FORACTION }}
           BRANCH: gh-pages
           FOLDER: docs/.vitepress/dist
+					
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.FORACTION }}
+      #     publish_dir: docs/.vitepress/dist
