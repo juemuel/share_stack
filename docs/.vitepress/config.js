@@ -99,6 +99,7 @@ export default {
 			{ text: "English", link: "/en" }
 		  ]
 		},
+		subSidebar: 'auto',
 		// locales: {
 		//   // 函数功能就是将需要语言转换的内容分开成两套配置，搞个模块化的方法。分别做配置即可
 		//   "/": getChineseThemeConfig(),
