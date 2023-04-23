@@ -15,10 +15,6 @@ export default {
 		],// 可以手动个配置html的head内容
 	lang: 'cn-ZH', 
 	ignoreDeadLinks: true, // 最好加上，构建时会忽略md中的外链
-	markdown: {
-		// theme: 'material-palenight',//md主题
-		lineNumbers: true //md 加行号
-	},
 	lastUpdated: true, //开启最近更新时间
 	appearance: true, //可以选择深浅主题
 	// 主题配置
@@ -61,6 +57,8 @@ export default {
 		//   copyright: 'Copyright © 2017-present Evan You'
 		// },
 		markdown: {
+			// theme: 'material-palenight',//md主题
+				lineNumbers: true,
 		    // options for markdown-it-anchor
 		    // https://github.com/valeriangalliat/markdown-it-anchor#usage
 		    anchor: {

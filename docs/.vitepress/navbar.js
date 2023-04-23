@@ -6,25 +6,27 @@ let navbar =
 			activeMatch: '/index'
 		},
 		{
-			text: '灵动月刊',
-			link: '/01.Monthly/index',
-		},
-		{
-			text: '技术研习',
-			link: '/02.Tech/index'
-		},
-		{
-			text: '前端面试',
-			link: '/03.Interview/index'
+			text: '前端基础',
+			items:[
+					{ text: 'Javascript基础知识', link: '/FECommon/JS/' },
+					{ text: 'Typescript基础知识', link: '/FECommon/TS/' },
+					{ text: 'WebAPI', link: '/FECommon/WebAPI/' },
+					{ text: '浏览器知识', link: '/FECommon/Explore/' },
+					{ text: '编程题', link: '/FECommon/Program/' },
+			],
 		},  
 		{
-			text: '组件库',
-			items: [
-				{ text: 'Vitepress引用组件', link: '/04.Component/VitePressUI' },
-			  { text: '通用组件库', link: '/04.Component/OriUI' },
-			  { text: 'JueMUI', link: '/04.Component/JueMUI' },
-			]
+			text: '日常随笔',
+			link: '/Daily/index'
 		},  
+		{
+			text: '灵动月摘',
+			link: '/Monthly/index'
+		},
+		{
+			text: '工作流',
+			link: '/Workflows/html/index'
+		},
 	]
 ;
 
