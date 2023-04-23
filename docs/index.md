@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: 快速浏览
       link: /01.Weekly/Start
-    - theme: brand
-      text: 了解配置
-      link: /09.Configure/Start
     - theme: alt
       text: 在 github 上查看
       link: https://github.com/juemuel/techstack_memo
@@ -27,7 +24,7 @@ features:
     details: 
   - icon: 🖖
     title: 这里是博客站
-    details: 这里是功能区 3 详情信息
+    details: 
 ---
 
 
