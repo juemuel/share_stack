@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.0fd66c21.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"05.Tools/iconWall.md","lastUpdated":null}'),o={name:"05.Tools/iconWall.md"};function n(s,c,r,l,i,p){return t(),a("div")}const m=e(o,[["render",n]]);export{_ as __pageData,m as default};

@@ -21,8 +21,7 @@ let navbar =
 			text: '组件库',
 			items: [
 				{ text: 'Vitepress引用组件', link: '/04.Component/VitePressUI' },
-			  { text: 'ElementUI', link: '/04.Component/ElementUI' },
-			  // { text: 'AntD', link: '/04.Component/AntUI' },
+			  { text: '通用组件库', link: '/04.Component/OriUI' },
 			  { text: 'JueMUI', link: '/04.Component/JueMUI' },
 			]
 		},  

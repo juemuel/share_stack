@@ -11,9 +11,21 @@
 			</el-select>
 		</el-form-item>
 		<el-form-item label="单选框Radio">
-			<el-radio v-model="radio" label="1">选项1</el-radio>
-			<el-radio v-model="radio" label="2">选项2</el-radio>
+			<el-radio v-model="radio" label="11" @change="handleRadioChange">选项1</el-radio>
+			<el-radio v-model="radio" label="12" @change="handleRadioChange">选项2</el-radio>
 		</el-form-item>
+		<el-radio-group v-model="radio" @change="handleRadioChange">
+			<el-radio label="21">选项1</el-radio>
+			<el-radio label="22">选项2</el-radio>
+			<el-radio label="23">选项3</el-radio>
+		</el-radio-group>
+		<el-checkbox-group v-model="checkList">
+		    <el-checkbox label="蓝桥云课 A"></el-checkbox>
+		    <el-checkbox label="蓝桥云课 B"></el-checkbox>
+		    <el-checkbox label="蓝桥云课 C"></el-checkbox>
+		    <el-checkbox label="蓝桥云课 E" disabled></el-checkbox>
+		    <el-checkbox label="蓝桥云课 E" disabled></el-checkbox>
+		  </el-checkbox-group>
 		<el-form-item>
 			<el-button type="primary">提交</el-button>
 			<el-button>取消</el-button>
@@ -31,7 +43,12 @@
 				},
         radio: "1",
 			}
-		}
+		},
+    methods: {
+      handleRadioChange(value) {
+        alert(value);
+      },
+    },
 	}
 </script>
 

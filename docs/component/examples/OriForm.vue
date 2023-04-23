@@ -19,6 +19,10 @@
 </script>
 
 <style>
+	form {  
+	  border-radius: 10px;  
+	  border: 1px solid #ccc;  
+	}
 	form.form-example {
 	  display: table;
 	}
@@ -26,7 +30,7 @@
 	  display: table-row;
 	}
 	label,input {
-	  display: table-cell;
+	  /* display: table-cell; */
 	  margin-bottom: 10px;
 	}
 	label {

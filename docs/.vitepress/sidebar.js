@@ -19,11 +19,11 @@ let sidebar = {
 			text: '技术分享',
 			path: '/02.Monthly/',
 			items: [{
-					text: '用5分钟配置安全性的Server',
+					text: '[翻译]用5分钟配置安全性的Server',
 					link: '/02.Tech/用5分钟配置安全性的Server'
 				},
 				{
-					text: '用vercel部署github_readme_stats',
+					text: '[方案]用vercel部署github_readme_stats',
 					link: '/02.Tech/用vercel部署github_readme_stats'
 				},
 			],
@@ -48,8 +48,12 @@ let sidebar = {
 				]
 			},
 			{
-				text: 'ElementUI',
-				items: [{ text: 'ElementUI', link: '/04.Component/ElementUI' }]
+				text: '通用组件库',
+				items: [
+					{ text: 'OriUI', link: '/04.Component/OriUI' },
+					{ text: 'ElementUI', link: '/04.Component/ElementUI' },
+					{ text: 'AntUI', link: '/04.Component/AntUI' },
+				]
 			},
 			{
 				text: 'JueMUI',
