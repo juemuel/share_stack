@@ -34,10 +34,19 @@
 			<el-button type="primary">提交</el-button>
 			<el-button>取消</el-button>
 		</el-form-item>
+		 <el-switch
+		    style="display: block"
+		    v-model="switchValue1"
+		    active-color="#13ce66"
+		    inactive-color="#ff4949"
+		    active-text="开启"
+		    inactive-text="关闭"
+		  >
+		  </el-switch>
 	</el-form>
 </template>
 
-<script>
+<script scoped>
 	export default{
 		data(){
 			return{
@@ -48,6 +57,7 @@
         radio1: "11",
         radio2: "21",
 				checkList: ["31", "32"],
+				switchValue1: true,
 			}
 		},
     methods: {

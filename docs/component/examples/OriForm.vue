@@ -1,39 +1,20 @@
 <template>
 	<form action="" method="get" class="form-example">
-	  <div class="form-example">
-	    <label for="name">Enter your name: </label>
-	    <input type="text" name="name" id="name" required />
-	  </div>
-	  <div class="form-example">
-	    <label for="email">Enter your email: </label>
-	    <input type="email" name="email" id="email" required />
-	  </div>
-	  <div class="form-example">
-	    <input type="submit" value="Subscribe!" />
-	  </div>
+		<label for="firstname">姓：</label><input type="text" name="firstname" id="firstname" required/><br />
+		<label for="lastname">名：</label><input type="text" name="lastname" id="lastname" required/><br />
+		<label for="name">姓名：</label><input type="text" name="name" id="name" required />
+		<label for="email">邮箱：</label><input type="email" name="email" id="email" required />
+		<input type="submit" value="Subscribe!" />
 	</form>
 </template>
 
 <script>
-
 </script>
 
-<style>
+<style scoped>
 	form {  
 	  border-radius: 10px;  
 	  border: 1px solid #ccc;  
 	}
-	form.form-example {
-	  display: table;
-	}
-	div.form-example {
-	  display: table-row;
-	}
-	label,input {
-	  /* display: table-cell; */
-	  margin-bottom: 10px;
-	}
-	label {
-	  padding-right: 10px;
-	}
+
 </style>
