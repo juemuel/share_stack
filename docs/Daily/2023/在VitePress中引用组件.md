@@ -81,6 +81,7 @@ const members = [
   }
 ]
 </script>
+
 <VPTeamMembers size="small" :members="members" />
 
 
@@ -97,7 +98,7 @@ const members = [
 
 <Badge type="info">custom element</Badge>
 
-## 2.5 Markdown扩展
+## 2.5 md扩展提示块
 
 ::: tip
 This is a tip
@@ -118,4 +119,23 @@ Danger zone, do not proceed
 ::: danger TITLE
 Danger zone, do not proceed
 :::
+
+
+
+## 2.7 html文本块
+
+<p style="color: #ff7340; border: 1px solid rgba(255, 135, 23, 0.25); border-radius:5px; padding: 1rem;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+
+
+## 2.6 代码块
+
+```javascript
+const lang = prompt("What is your favorite programming language?");
+? alert("JavaScript to the world! 🚀🟡")
+: alert(`We don't permit such languages here 💩`);
+```
+
+
+
 

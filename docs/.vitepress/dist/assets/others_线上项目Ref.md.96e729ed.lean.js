@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as t,V as l}from"./chunks/framework.c463baea.js";const m=JSON.parse('{"title":"线上项目文档","description":"","frontmatter":{},"headers":[],"relativePath":"others/线上项目Ref.md","lastUpdated":null}'),o={name:"others/线上项目Ref.md"},i=l("",7),r=[i];function h(s,n,_,c,d,u){return e(),t("div",null,r)}const p=a(o,[["render",h]]);export{m as __pageData,p as default};
