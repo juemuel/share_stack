@@ -1,6 +1,29 @@
-# VitePress组件与语法
+# md中使用Vue（组件、语法）
 
 
+
+# 引用组件
+
+## 引用方式
+
+1. 如果只是少数页面中显示，推荐在需要的.md文件中引入，script中import组件即可
+2. 如果在不同页面中使用较多，推荐全局注册，在`.vitepress/theme/index.js`中， 使用`enhanceApp` 函数并注册组件
+
+## 引用Vue Demo
+
+
+
+## 引用Element Demo
+
+
+
+
+
+
+
+
+
+# 其他
 
 ## 代码块高亮
 
@@ -8,7 +31,7 @@
 
 
 
-## 插入Vue语法和组件
+## Vue模版语法
 
 详情见：https://vitepress.dev/guide/using-vue
 

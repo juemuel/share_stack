@@ -68,10 +68,8 @@ let sidebar = {
 			{
 				text: 'VitePress引入组件',
 				items: [
-					// { text: 'JueMUI', link: '/04.Component/JueMUI' },
-				],
-				collapsible: true, // 表示可折叠
-				collapsed: true, // 开启默认折叠
+					{ text: 'VitePressUI与组件引用', link: '/04.Component/VitePressUI' },
+				]
 			},
 		],
 	};

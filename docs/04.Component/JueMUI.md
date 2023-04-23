@@ -1,4 +1,8 @@
 # 自定义的组件库
 
-待办
+<script setup>
+import VueExampleComponent from '../component/examples/VueExampleComponent.vue'
+</script>
+
+<VueExampleComponent />
 

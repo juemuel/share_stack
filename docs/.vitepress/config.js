@@ -59,6 +59,20 @@ export default {
 		// footer: { // sidebar存在时页脚不显示
 		//   message: 'Released under the MIT License.',
 		//   copyright: 'Copyright © 2017-present Evan You'
-		// }
+		// },
+		markdown: {
+		    // options for markdown-it-anchor
+		    // https://github.com/valeriangalliat/markdown-it-anchor#usage
+		    anchor: {
+		      permalink: true
+		    },
+		    // options for @mdit-vue/plugin-toc
+		    // https://github.com/mdit-vue/mdit-vue/tree/main/packages/plugin-toc#options
+		    toc: { level: [1, 2] },
+		    config: (md) => {
+		      // use more markdown-it plugins!
+		      // md.use(require('markdown-it-xxx'))
+		    }
+		  }
 	}
 }
