@@ -42,34 +42,22 @@ let sidebar = {
 			},
 		],
 		'/04.Component/': [{
-				text: 'ElementUI',
+				text: 'VitePress',
 				items: [
-					// { text: 'ElementUI', link: '/04.Component/ElementUI' },
-				],
-				collapsible: true, // 表示可折叠
-				collapsed: true, // 开启默认折叠
+					{ text: 'VitePressUI与组件引用', link: '/04.Component/VitePressUI' },
+				]
 			},
 			{
-				text: 'AntDUI',
-				items: [
-					// { text: 'AntD', link: '/04.Component/AntUI' },
-				],
-				collapsible: true, // 表示可折叠
-				collapsed: true, // 开启默认折叠
+				text: 'ElementUI',
+				items: [{ text: 'ElementUI', link: '/04.Component/ElementUI' }]
 			},
 			{
 				text: 'JueMUI',
 				items: [
-					// { text: 'JueMUI', link: '/04.Component/JueMUI' },
+					{ text: 'JueMUI', link: '/04.Component/JueMUI' },
 				],
 				collapsible: true, // 表示可折叠
 				collapsed: true, // 开启默认折叠
-			},
-			{
-				text: 'VitePress引入组件',
-				items: [
-					{ text: 'VitePressUI与组件引用', link: '/04.Component/VitePressUI' },
-				]
 			},
 		],
 	};

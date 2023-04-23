@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-		"docs:build": "vitepress build docs"
+    "docs:build": "vitepress build docs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "element-plus": "^2.3.3",
     "vitepress": "^1.0.0-alpha.64"
   },
   "devDependencies": {
