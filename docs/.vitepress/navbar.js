@@ -14,6 +14,15 @@ let navbar =
 					{ text: '浏览器知识', link: '/FECommon/Explore/' },
 					{ text: '编程题', link: '/FECommon/Program/' },
 			],
+		}, 
+		{
+			text: '前端框架',
+			items:[
+					{ text: 'Vue', link: '/FECommon/' },
+					{ text: 'React', link: '/FECommon/' },
+          { text: 'React Native', link: '/FECommon/' },
+					{ text: 'Uni-App', link: '/FEFrames/Uni-App/uni-app中的常见元素应用' },
+			],
 		},  
 		{
 			text: '日常随笔',
@@ -21,7 +30,7 @@ let navbar =
 		},  
 		{
 			text: '灵动月摘',
-			link: '/Monthly/index'
+			link: '/Monthly/202304'
 		},
 		{
 			text: '工作流',
