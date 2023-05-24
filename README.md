@@ -21,12 +21,10 @@
   - 技术博文、周刊月刊
   - 支持js、html因此可以模块引入组件库，做组件展示
 
-
-
 ## 部署方式
 
-- 生产环境
-- 开发环境
+- `npm run docs:dev`
+- `npm run docs:serve`
 
 
 

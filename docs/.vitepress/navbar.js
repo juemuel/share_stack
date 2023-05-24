@@ -34,7 +34,7 @@ let navbar =
 		},
 		{
 			text: '工作流',
-			link: '/Workflows/html/index'
+			link: '/Workflows/index'
 		},
 	]
 ;

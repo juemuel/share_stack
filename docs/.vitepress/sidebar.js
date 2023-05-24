@@ -9,7 +9,7 @@ let sidebar = {
 						link: '/Monthly/202304'
 					}]
 			}],
-		}, ],
+		},],
 		"/FECommon/": [{
 			text: '前端基础',
 			path: '/FECommon/',
@@ -47,8 +47,7 @@ let sidebar = {
       			link: '/FEFrames/Uni-App/uni-app中的前后端通信'
       		},]
       }],
-    }]
-		
+    },],
 	};
 
 export {sidebar};
