@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as l,V as t}from"./chunks/framework.c463baea.js";const _=JSON.parse('{"title":"前端工作流","description":"","frontmatter":{},"headers":[],"relativePath":"Workflows/index.md","lastUpdated":null}'),r={name:"Workflows/index.md"},i=t("",60),o=[i];function n(c,h,s,d,b,u){return e(),l("div",null,o)}const m=a(r,[["render",n]]);export{_ as __pageData,m as default};
