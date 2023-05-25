@@ -8,8 +8,7 @@ let navbar =
 		{
 			text: '前端基础',
 			items:[
-					{ text: 'Javascript基础知识', link: '/FECommon/JS/' },
-					{ text: 'Typescript基础知识', link: '/FECommon/TS/' },
+					{ text: 'Javascript手册', link: '/FECommon/Js/' },
 					{ text: 'WebAPI', link: '/FECommon/WebAPI/' },
 					{ text: '浏览器知识', link: '/FECommon/Explore/' },
 					{ text: '编程题', link: '/FECommon/Program/' },

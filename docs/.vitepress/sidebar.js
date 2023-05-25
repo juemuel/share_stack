@@ -10,30 +10,6 @@ let sidebar = {
 					}]
 			}],
 		},],
-		"/FECommon/": [{
-			text: '前端基础',
-			path: '/FECommon/',
-			items: [{
-				text: 'JavaScript',
-				items: [{
-						text: 'JavaScript基础',
-						link: '/FECommon/JS/'
-					}]
-			},{
-				text: 'ES6基础',
-				items: [{
-						text: 'ECMAScript基础',
-						link: '/FECommon/ES6/'
-        }]
-			},{
-				text: 'TS基础',
-				items: [{
-						text: 'Typescript基础',
-						link: '/FECommon/TS/'
-				}]
-			},
-			],
-		}, ],
     "/FEFrames/":[{
       text: "前端框架",
       path:"/FEFrames/",
