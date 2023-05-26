@@ -26,8 +26,10 @@ export default {
 		search: {
 			provider: 'local'
 		},
+    outline:[2,6],
 		nav: navbar,
-		sidebar: sidebar,// 左侧导航
+		sidebar: sidebar,// 设置左侧导航
+    subSidebar: 'auto',
 		socialLinks: [ //右上角社交连接，图标和链接
 			{
 				icon: 'github', // discord facebook github instagram linkedin slack twitter youtube 或者 svg 字符串
@@ -40,7 +42,6 @@ export default {
 		  pattern: 'https://github.com/juemuel/techstack_memo/tree/main/docs/:path',
 		  text: 'Edit this page on GitHub'
 		},
-		subSidebar: 'auto',
 		localeLinks: { // 国际化下拉框需要对内容拆分，未完成
 		  items: [
 			{ text: "简体中文", link: "/" },

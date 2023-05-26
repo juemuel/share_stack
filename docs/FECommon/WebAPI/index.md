@@ -1,7 +1,5 @@
 # WebAPI
 
-# F-Web API
-
 > 编写 Web 代码时，有许多 Web API 可供调用。Web API 一般用于JS环境
 
 ## 一、Window API
