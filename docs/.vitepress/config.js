@@ -26,7 +26,7 @@ export default {
 		search: {
 			provider: 'local'
 		},
-    outline:[2,6],
+    outline:[2,6], // 右侧除了h1，显示所有标头
 		nav: navbar,
 		sidebar: sidebar,// 设置左侧导航
     subSidebar: 'auto',
