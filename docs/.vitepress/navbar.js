@@ -10,7 +10,6 @@ let navbar =
 			items:[
 					{ text: 'JS手册', link: '/FECommon/Js/' },
 					{ text: 'WebAPI手册', link: '/FECommon/WebAPI/' },
-          { text: '工程化', link: '/FECommon/Engineer/' },
 					{ text: '面试问题', link: '/FECommon/Interface/' },
 					{ text: '编程题', link: '/FECommon/Program/' },
           { text: 'F&Q', link:'/FECommon/F&Q/'}
