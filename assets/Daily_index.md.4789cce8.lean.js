@@ -1,1 +1,0 @@
-import{_ as e,o as a,c as t,V as r}from"./chunks/framework.c463baea.js";const u=JSON.parse('{"title":"日常随笔","description":"","frontmatter":{},"headers":[],"relativePath":"Daily/index.md","lastUpdated":1684983196000}'),i={name:"Daily/index.md"},l=r("",3),s=[l];function _(o,n,c,d,h,p){return a(),t("div",null,s)}const f=e(i,[["render",_]]);export{u as __pageData,f as default};
