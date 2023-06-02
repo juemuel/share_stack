@@ -5,6 +5,9 @@ let sidebar = {
     items: [{
       text: '2023年',
       items: [{
+        text: '月刊202306',
+        link: '/Monthly/202306'
+      }, {
         text: '月刊202305',
         link: '/Monthly/202305'
       }, {
