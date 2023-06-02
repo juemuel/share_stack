@@ -11,16 +11,16 @@ let navbar =
 					{ text: 'JS手册', link: '/FECommon/Js/' },
 					{ text: 'WebAPI手册', link: '/FECommon/WebAPI/' },
 					{ text: '面试问题', link: '/FECommon/Interface/' },
-					{ text: '编程题', link: '/FECommon/Program/' },
+					{ text: '编程题(待整合)', link: '/FECommon/Program/' },
           { text: 'F&Q', link:'/FECommon/F&Q/'}
 			],
 		}, 
 		{
 			text: '前端框架',
 			items:[
-					{ text: 'Vue', link: '/FECommon/' },
-					{ text: 'React', link: '/FECommon/' },
-          { text: 'React Native', link: '/FECommon/' },
+					{ text: 'Vue(待整合)', link: '/FECommon/' },
+					{ text: 'React(待整合)', link: '/FECommon/' },
+          { text: 'React Native(待整合)', link: '/FECommon/' },
 					{ text: 'Uni-App', link: '/FEFrames/Uni-App/uni-app中的常见元素应用' },
 			],
 		},  
@@ -36,6 +36,15 @@ let navbar =
 			text: '工作流',
 			link: '/Workflows/index'
 		},
+    {
+      text: '项目集锦',
+			items:[
+					{ text: 'React Movie Lib', link: 'https://comfy-haupia-02c33d.netlify.app/' },
+					{ text: 'Vue Weather App', link: 'https://6476fc1bd18d7b7578c75d70--cozy-frangipane-de6138.netlify.app/' },
+          { text: 'Ori Canvas Game', link: 'https://comfy-haupia-02c33d.netlify.app/' },
+					{ text: 'More', link: 'https://github.com/juemuel/learning_stack/blob/master/README.md' },
+			],
+    }
 	]
 ;
 
