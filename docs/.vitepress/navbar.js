@@ -41,7 +41,7 @@ let navbar =
 			items:[
 					{ text: 'React Movie Lib', link: 'https://comfy-haupia-02c33d.netlify.app/' },
 					{ text: 'Vue Weather App', link: 'https://6476fc1bd18d7b7578c75d70--cozy-frangipane-de6138.netlify.app/' },
-          { text: 'Ori Canvas Game', link: 'https://comfy-haupia-02c33d.netlify.app/' },
+          { text: 'Ori Canvas Game', link: 'https://playful-jelly-e3d85f.netlify.app/' },
 					{ text: 'More', link: 'https://github.com/juemuel/learning_stack/blob/master/README.md' },
 			],
     }
