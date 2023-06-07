@@ -9,6 +9,7 @@ let navbar =
 			text: '前端基础',
 			items:[
 					{ text: 'JS手册', link: '/FECommon/Js/' },
+          { text: 'JS一句话语法糖', link: '/FECommon/Js/jstech' },
 					{ text: 'WebAPI手册', link: '/FECommon/WebAPI/' },
 					{ text: '面试问题', link: '/FECommon/Interface/' },
 					{ text: '编程题(待整合)', link: '/FECommon/Program/' },
