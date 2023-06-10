@@ -96,11 +96,11 @@
 ### 3.5 client_loop: send disconnect: Broken pipe [ssh] 
 - 问题描述：`client_loop: send disconnect: Broken pipe`
 - 问题原因：由于客户端长期没有对ssh做操作而断开连接
-- 解决方案：发送ssh心跳包（修改客户端配置文件）
+- 解决方案：发送ssh心跳包（修改客户端配置文件），（！未解决，应该需要再增加一些配置）
 ```bash
  ## 在 /etc/ssh/ssh_config的Host *中添加
  ServerAliveInterval 60
- IPQoS**=throughput
+ IPQoS=throughput
 ```
 ### 3.6 MYSQL ERROR 2002 [mysql] 
 - 问题描述：`ERROR 2002(HY000): Can‘t connect to local MySQL server through socket ‘/tmp/mysql.sock‘ `

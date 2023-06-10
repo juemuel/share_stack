@@ -40,6 +40,7 @@ let navbar =
     {
       text: '项目集锦',
 			items:[
+          { text: 'Portfilo 作品集', link: 'https://joyful-boba-455906.netlify.app/' },
 					{ text: 'React Movie Lib', link: 'https://comfy-haupia-02c33d.netlify.app/' },
 					{ text: 'Vue Weather App', link: 'https://6476fc1bd18d7b7578c75d70--cozy-frangipane-de6138.netlify.app/' },
           { text: 'Ori Canvas Game', link: 'https://playful-jelly-e3d85f.netlify.app/' },
